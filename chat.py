@@ -1,8 +1,8 @@
 import streamlit as st
 import openai
-
+import os 
 # --- CONFIGURAÇÃO DA API ---
-openai.api_key = "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"
+openai.api_key = os.getenv("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")
 
 # --- FUNÇÃO PARA BUSCAR NA WIKIPEDIA ---
 def buscar_wikipedia(pergunta):
